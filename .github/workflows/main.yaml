@@ -1,0 +1,13 @@
+name: MAIN
+on:
+  push:
+    branches:
+      - main
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo test
+        uses: seungjaey/test-1/.github/actions/actions-echo@main
+        with:
+          TEST_INPUT: test123
